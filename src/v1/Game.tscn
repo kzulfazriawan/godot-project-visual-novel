@@ -1,0 +1,45 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://assets/img/Wood-Camp/Wood-Camp/Background/Background-5.png" type="Texture" id=1]
+[ext_resource path="res://assets/img/Wood-Camp/Wood-Camp/Background/Background-1.png" type="Texture" id=2]
+[ext_resource path="res://assets/img/Wood-Camp/Wood-Camp/Background/Background-3.png" type="Texture" id=3]
+[ext_resource path="res://assets/img/Wood-Camp/Wood-Camp/Background/Background-4.png" type="Texture" id=4]
+[ext_resource path="res://src/v1/Game.gd" type="Script" id=5]
+
+[node name="Game" type="Node"]
+script = ExtResource( 5 )
+
+[node name="BackgroundTexture" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="BackgroundTexture"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 2 )
+expand = true
+stretch_mode = 1
+
+[node name="TextureRect2" type="TextureRect" parent="BackgroundTexture"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 3 )
+expand = true
+stretch_mode = 1
+
+[node name="TextureRect3" type="TextureRect" parent="BackgroundTexture"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 1
+
+[node name="TextureRect4" type="TextureRect" parent="BackgroundTexture"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 1 )
+expand = true
+stretch_mode = 1
